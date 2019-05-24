@@ -1,4 +1,4 @@
-# Electromagnetic finite element analysis in python using the femm module
+# Electromagnetic finite element analysis in python with the femm module
 
 **1. Goal for the project**
 **2. Details about contribution for the project**
