@@ -290,3 +290,6 @@ class OZO(object):
 ## Resistance and Inductance as a function of frequnecy. Сalculation and measurement
 ![measurement](IMG_20191203_162938_HDR.jpg)
 ![Сalculation](OZO-154-426_1.18_verif.png)
+
+
+## Method for determining the electromagnetic properties of a coil core
