@@ -18,6 +18,7 @@
 
 ![Low freq hfrmonic EM analisys](OZO500/pic/OZO-500-273_FEM.jpg)
 
+## Проектирование классов
 ![UML Class Dagram](UMLClassDiagram.jpeg)
 ###
 ```python
@@ -31,9 +32,63 @@ diameterList = [0.063, 0.071, 0.08, 0.09, 0.1, 0.112, 0.12, 0.125, 0.13, 0.14, 0
                 0.56, 0.6, 0.63, 0.67, 0.69, 0.71, 0.75, 0.77, 0.8, 0.83, 0.85, 0.9, 0.93, 0.95, 1, 1.06, 1.12, 1.08,
                 1.18, 1.25, 1.32, 1.4, 1.45, 1.5, 1.56, 1.6, 1.7, 1.8, 1.9, 2, 2.12, 2.24, 2.36, 2.44, 2.5]
 ```
-###
+### class Wire
+```python
+class Wire(object):
+    '''
+    Создание объекта Провод
+    '''
 
+    version = '0.1'  # class variable
 
+    def __init__(self, diameter):
+        '''
+        Initialize Wire Diameter in meters
+        '''
+        self.diameter = diameter
+
+    def area(self):
+        '''
+        Calculate wire Cross-sectional Area
+        '''
+        return pi * self.diameter ** 2 / 4
+```
+### class Coil 
+```python
+class Coil(object):
+    def __init__(self, outerDiameter, innerDiameter, length, wireDiameter, fillFactor=57.3 / 100):
+        '''
+        Objects Inicialisation for Wire and Coil
+        '''
+        self.outerDiameter = outerDiameter
+        self.innerDiameter = innerDiameter
+        self.length = length
+        self.fillFactor = fillFactor
+        self.Wire = Wire(wireDiameter)
+
+    def area(self):
+        '''
+        Calculate coil cross-section area
+        '''
+        return (self.outerDiameter - self.innerDiameter) / 2 * self.length
+
+    def windingNomber(self):
+        '''
+        Calculate winding nomber in Coil
+        '''
+        return int(self.fillFactor * self.area() / self.Wire.area())
+
+    def wireLength(self):
+        '''
+        Calculate wire length in Coil
+        '''
+        return pi * self.windingNomber() * (self.outerDiameter + self.innerDiameter) / 2
+
+    def resistanceAnalitical(self):
+        """ Аналитический расчёт сопротивления катушки """
+        rho20 = 0.0172e-6  # (Ohm*mm^2)/m
+        return rho20 * self.wireLength() / self.Wire.area()
+```
 
 ## Resistance and Inductance as a function of frequnecy. Сalculation and measurement
 ![measurement](IMG_20191203_162938_HDR.jpg)
