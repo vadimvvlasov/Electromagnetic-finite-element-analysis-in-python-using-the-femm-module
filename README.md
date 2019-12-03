@@ -7,10 +7,18 @@
 ## 2. Details about contribution for the project
 
 - проектирование и разработка библиотеки классов для моделирования катушек оповещателей в составе внутритрубных дефектоскопов
-- тестирование методов классов на соответсие аналитическим методам решения
-- эмпирическая проверка численных моделей (методов класса оповещателе)
+- тестирование методов классов на соответстие аналитическим методам решения
+- эмпирическая проверка численных моделей (методов класса оповещателей)
+- Метод определения электромагнитных свойств сердечника катушки
 - разработка критериев эффективности: напряжённомсть магнитного поля, мощность активных потерь
 - параметрических расчёт оповещателей и выбор оптимальных параметров.
+
+- design and development of a class library for modeling sounder coils as part of in-line flaw detectors
+- testing of class methods for compliance with analytical methods of solution
+- empirical verification of numerical models (sounder class methods)
+- Method for determining the electromagnetic properties of a coil core
+- building of performance criteria: magnetic field strength, active power loss
+- parametric calculation and obtaining optimal parameters.
 
 ## 3. An overview of the project
 
