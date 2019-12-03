@@ -21,3 +21,6 @@
 ![Object Dagram](ObjectDiagram.jpeg)
 
 ![UML Class Dagram](UMLClassDiagram.jpeg)
+
+
+## Resistance and Inductance as a function of frequnecy. Сalculation and measurement
