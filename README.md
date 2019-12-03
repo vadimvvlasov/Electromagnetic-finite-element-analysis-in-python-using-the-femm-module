@@ -19,7 +19,7 @@
 ![Low freq hfrmonic EM analisys](OZO500/pic/OZO-500-273_FEM.jpg)
 
 ## Проектирование классов
-![UML Class Dagram](UMLClassDiagram.jpeg)
+![UML Class Dagram](UMLClassDiagram.jpg)
 ###
 ```python
 # coding=utf-8
