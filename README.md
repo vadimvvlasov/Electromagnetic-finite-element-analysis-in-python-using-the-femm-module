@@ -13,6 +13,8 @@
 - разработка критериев эффективности: напряжённомсть магнитного поля, мощность активных потерь
 - параметрических расчёт оповещателей и выбор оптимальных параметров.
 
+---
+
 - design and development of a class library for modeling sounder coils as part of in-line flaw detectors
 - testing of class methods for compliance with analytical methods of solution
 - empirical verification of numerical models (sounder class methods)
