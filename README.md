@@ -24,9 +24,9 @@
 
 ## 3. An overview of the project
 
-# ![Object for Low freq EM analisys](OZO500/pic/OZO-500-273.jpg)
+:! ![Object for Low freq EM analisys](OZO500/pic/OZO-500-273.jpg)
 
-# ![Low freq hfrmonic EM analisys](OZO500/pic/OZO-500-273_FEM.jpg)
+![Low freq hfrmonic EM analisys](OZO500/pic/OZO-500-273_FEM.jpg)
 
 ## Проектирование классов
 ![UML Class Dagram](UMLClassDiagram.jpg)
