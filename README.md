@@ -108,7 +108,7 @@ class PIG(object):
     pipeOuterDiameter -- диаметр трубы в метрах
     pipeWall -- толщина стенки трубы в метрах
 
-    Returns:
+    Return:
     -------------------
      pointAt1mFromThePipe() -- координата X точки измерения поля на растоянии 1м от трубы
         '''
@@ -277,7 +277,7 @@ class OZO(object):
         labels -- if !=0 prints names of Coils, Pigs and Ozos to be initialised
         loses
 
-        Returns:
+        Return:
         -------------------
 
         '''
